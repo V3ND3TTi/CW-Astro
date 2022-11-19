@@ -220,6 +220,16 @@ section .title::after {
   content: 'see my work';
 }
 
+.collections .collections-content {
+  display: flex;
+  justify-content: center;
+}
+
+.collections-content i {
+  font-size: 35px;
+  cursor: pointer;
+}
+
 /* CONTACT SECTION STYLING */
 .contact .title::after {
   content: "let's collaborate";
@@ -439,12 +449,6 @@ footer {
     width: 100%;
     margin-bottom: 35px;
   }
-  .pageant {
-    padding-left: 0;
-  }
-  .swiper {
-    width: 75%;
-  }
 }
 
 @media (max-width: 690px) {
@@ -471,16 +475,13 @@ footer {
   .about .about-content .right {
     font-size: 14px;
   }
-  .about .about-content .non-profits img {
-    width: 110px;
+  .collections .collections-content {
+    margin-left: 0px;
   }
-  .pageant {
-    padding-left: 0;
+  .collections-content img {
+    width: 80%;
   }
   .footer-content {
     font-size: 12px;
-  }
-  .swiper {
-    width: 75%;
   }
 }
