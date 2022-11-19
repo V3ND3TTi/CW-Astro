@@ -25,13 +25,9 @@ body {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 10px 0;
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.3s ease;
-}
-
-.navbar.sticky {
-  padding: 15px 0;
   background: crimson;
 }
 
@@ -55,10 +51,6 @@ body {
   transition: all 0.3s ease;
 }
 
-.navbar.sticky .logo a span {
-  color: #fff;
-}
-
 .navbar .menu li {
   list-style: none;
   display: inline-block;
@@ -79,16 +71,19 @@ body {
   color: white;
 }
 
-.navbar.sticky .menu li a:hover {
-  color: #fff;
-}
-
 /* MENU BUTTON STYLING */
 .menu-btn i {
   color: #fff;
-  font-size: 23px;
+  font-size: 30px;
   cursor: pointer;
   display: none;
+}
+
+.menu-btn i.active:before {
+  content: '\f00d';
+  color: crimson;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 /* HOME SECTION STYLING */
@@ -224,28 +219,6 @@ section .title::after {
 .collections .title::after {
   content: 'see my work';
 }
-
-/* .collections .collections-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.collections-item {
-  background: white;
-  overflow: hidden;
-}
-
-.collections-img {
-  object-fit: cover;
-  transition: 
-    transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;   
-}
-
-.collections-img:hover {
-  transform: scale(1.2);
-  opacity: .75;
-} */
 
 /* CONTACT SECTION STYLING */
 .contact .title::after {
@@ -400,9 +373,11 @@ footer {
 @media (max-width: 947px) {
   .max-width {
     padding: 0 50px;
+    max-width: 940px;
   }
   .menu-btn i {
-    display: block;
+    display: flex;
+    justify-content: right;
     z-index: 999;
     color: black;
     background: crimson;
@@ -412,7 +387,6 @@ footer {
   .menu-btn i.active:before {
     content: '\f00d';
     color: black;
-    background: crimson;
     border-radius: 10px;
     padding: 5px;
   }
