@@ -12,6 +12,7 @@ body {
   scroll-behavior: smooth;
   position: relative;
   height: 100%;
+  margin-bottom: 40px;
 }
 
 .max-width {
@@ -94,7 +95,7 @@ body {
 /* HOME SECTION STYLING */
 .home {
   display: flex;
-  background: url('../../public/CWcollage.jpg') no-repeat center;
+  background: url('/CWcollage.jpg') no-repeat center;
   background-color: white;
   height: 100vh;
   color: black;
@@ -377,7 +378,10 @@ section .title::after {
 /* FOOTER STYLING */
 footer {
   background: #111;
-  padding: 10px 0;
+  height: 40px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   color: #fff;
   font-size: 20px;
 }
