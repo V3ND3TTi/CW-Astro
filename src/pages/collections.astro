@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout pageTitle='Collections of Work'>
+  <!-- COLLECTIONS SECTION -->
+  <section class='collections' id='collections'>
+    <div class='max-width'>
+      <h2 class='title'>Collections</h2>
+      <div class='pageant'></div>
+      <div class='collections-content'>
+        <!-- Swiper -->
+        <div class='swiper mySwiper'>
+          <div class='swiper-wrapper'>
+            <div class='swiper-slide'>
+              <img src='img/cw1.jpg' />
+            </div>
+            <div class='swiper-slide'>
+              <img src='img/cw2.jpg' />
+            </div>
+            <div class='swiper-slide'>
+              <img src='img/cw3.jpg' />
+            </div>
+            <div class='swiper-slide'>
+              <img src='img/cw4.jpg' />
+            </div>
+            <div class='swiper-slide'>
+              <img src='img/cw5.jpg' />
+            </div>
+          </div>
+          <div class='swiper-pagination'></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
