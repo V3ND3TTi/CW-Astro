@@ -225,9 +225,16 @@ section .title::after {
   justify-content: center;
 }
 
-.collections-content i {
-  font-size: 35px;
-  cursor: pointer;
+.collections .image-preview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.collections .image-preview img {
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px crimson;
+  margin: 20px;
 }
 
 /* CONTACT SECTION STYLING */
@@ -445,6 +452,13 @@ footer {
   .about .about-content .right {
     flex: 100%;
   }
+
+  .collections .image-preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
@@ -474,6 +488,11 @@ footer {
   }
   .about .about-content .right {
     font-size: 14px;
+  }
+  .collections .image-preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .footer-content {
     font-size: 12px;
