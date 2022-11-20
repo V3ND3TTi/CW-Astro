@@ -238,6 +238,18 @@ section .title::after {
   margin: 20px;
 }
 
+.img-expanded {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back-link {
+  text-align: center;
+  color: crimson;
+}
+
 /* CONTACT SECTION STYLING */
 .contact .title::after {
   content: "let's collaborate";
@@ -494,6 +506,12 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .img-expanded {
+    max-width: fit-content;
+  }
+  .back-link {
+    text-align: center;
   }
   .footer-content {
     font-size: 12px;

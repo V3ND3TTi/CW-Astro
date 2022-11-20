@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ImagePreview from '../../components/ImagePreview.astro';
 ---
 
 <BaseLayout pageTitle='Collections of Work'>
@@ -9,7 +8,23 @@ import ImagePreview from '../../components/ImagePreview.astro';
     <div class='max-width'>
       <h2 class='title'>Collections</h2>
       <div class='collections-content'>
-        <ImagePreview />
+        <div class='image-preview'>
+          <a href='/collections/1'
+            ><img src='/cw1.jpg' height='300' width='200' />
+          </a>
+          <a href='/collections/2'
+            ><img src='/cw2.jpg' height='300' width='200' />
+          </a>
+          <a href='/collections/3'
+            ><img src='/cw3.jpg' height='300' width='200' />
+          </a>
+          <a href='/collections/4'
+            ><img src='/cw4.jpg' height='300' width='200' />
+          </a>
+          <a href='/collections/5'
+            ><img src='/cw5.jpg' height='300' width='200' />
+          </a>
+        </div>
       </div>
     </div>
   </section>
