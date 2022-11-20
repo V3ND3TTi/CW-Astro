@@ -229,6 +229,7 @@ section .title::after {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .collections .image-preview img {
