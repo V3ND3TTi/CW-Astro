@@ -502,7 +502,7 @@ footer {
     flex-wrap: wrap;
   }
   .img-expanded {
-    max-width: fit-content;
+    width: 80%;
   }
   .back-link {
     text-align: center;
