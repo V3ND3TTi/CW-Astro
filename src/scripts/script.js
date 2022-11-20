@@ -1,4 +1,4 @@
-document.querySelector('.menu-btn').addEventListener('click', () => {
+document.querySelector('.hamburger').addEventListener('click', () => {
   document.querySelector('.navbar .menu').classList.toggle('active');
-  document.querySelector('.menu-btn i').classList.toggle('active');
+  document.querySelector('.hamburger i').classList.toggle('active');
 });
